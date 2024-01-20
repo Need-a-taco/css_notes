@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>External CSS</title>
+    <link rel="stylesheet" href="external.css">
+</head>
+<body>
+    <h1>Style Website</h1>
+    <br>
+    <p class="odd">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet consequuntur rerum vero est culpa! Veniam ex eligendi veritatis eos, quidem, fugiat officiis iste nobis laborum beatae sequi natus nam repudiandae.</p>
+    <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet consequuntur rerum vero est culpa! Veniam ex eligendi veritatis eos, quidem, fugiat officiis iste nobis laborum beatae sequi natus nam repudiandae.</p>
+    <p class="odd">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet consequuntur rerum vero est culpa! Veniam ex eligendi veritatis eos, quidem, fugiat officiis iste nobis laborum beatae sequi natus nam repudiandae.</p>
+    <p id="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet consequuntur rerum vero est culpa! Veniam ex eligendi veritatis eos, quidem, fugiat officiis iste nobis laborum beatae sequi natus nam repudiandae.</p>
+</body>
+</html>
+
+<!--
+    This is the same styling as the internal CSS, except that we have
+    relocated the code to a CSS file called external.css. We can just copy
+    and paste everything between the style tags. We dedicate external.css
+    to the style of this file, external.html. Normally, the naming conventions
+    are index.html and style.css. 
+
+    Note that in external.html, we have to establish that our external.css
+    file, which we should generally keep in the same directory, is the
+    stylesheet for our file. To do this, we add a link tag in the head of
+    the document, add "rel=stylesheet" to establish that the relation of
+    the following file with the current is that of a stylesheet. Then, we
+    add external.css according to its file path relative to external.html
+    as the href attribute. Now, we are done. 
+
+    However, what if we want to create different styles for different paragraphs
+    or same types of html, while still using internal or external CSS. This
+    is where id and class attributes come in. Id is generally used for unique
+    styling, while class is used to apply a style to many html tags. However,
+    if you want you can use either interchangeably when it comes to styling. 
+
+    Id is usually used for implementing Javascript functions for web functionality,
+    but that's a topic for another day. 
+
+    Also, this is outlined in the CSS file too, but I'll write it here: note the
+    syntax when defining ids and classes. Notice that for ids, we use the hashtag
+    before the id name to indicate that we are about to define an id. Then for
+    classes, we use a period before to indicate we are about to define a class.
+-->
